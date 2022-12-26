@@ -1,39 +1,48 @@
 # Hotel-BackendApi
 Hotel Backend Api  in spring boot
 
-User Controller
+Swagger Ui..
+http://localhost:8081/swagger-ui/#/
+
+POST
+​/myApp​/api​/signUpForNewUsers
+signUpForNewUsers
+
+http://localhost:8081/myApp/api/signUpForNewUsers 
+
+curl -X POST "http://localhost:8081/myApp/api/signUpForNewUsers" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"address\": \"string\", \"dob\": \"string\", \"emailId\": \"string\", \"firstName\": \"string\", \"lastName\": \"string\", \"mobileNo\": \"string\", \"panCard\": \"string\", \"password\": \"string\", \"pincode\": \"string\"}"
 
 
 POST
 ​/myApp​/api​/login
 loginForUser
-POST
-​/myApp​/api​/signUpForNewUsers
-signUpForNewUsers
+
+http://localhost:8081/myApp/api/login
+
+curl -X POST "http://localhost:8081/myApp/api/login" -H "accept: */*" -H "Content-Type: application/json" -d "{ \"additionalProp1\": {}, \"additionalProp2\": {}, \"additionalProp3\": {}}"
+
+
 PUT
 ​/myApp​/api​/updateTheProfile​/{existingMobileNo}
 updateTheProfile
+
+{
+  "address": "string",
+  "dob": "string",
+  "emailId": "string",
+  "firstName": "string",
+  "lastName": "string",
+  "mobileNo": "string",
+  "panCard": "string",
+  "password": "string",
+  "pincode": "string"
+}
+
 GET
 ​/myApp​/api​/viewTheProfile​/{existingMobileNo}
 viewTheProfile
 
-
-
-Trascation Controller
-
-
-POST
-​/transcations​/api​/addMoneyToWallet
-signUpForNewUsers
-POST
-​/transcations​/api​/transferMoneyToOthersWallet
-signUpForNewUsers
-GET
-​/transcations​/api​/viewPassbook
-signUpForNewUser
-
-
-
+curl -X GET "http://localhost:8081/myApp/api/viewTheProfile/xxxx" -H "accept: */*"
 
 
 Controller..
